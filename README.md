@@ -1,3 +1,5 @@
+# Small Projects
+
 This repository contains various small projects, created using basic Python logic and Python GUI packages like Tkinter. These are as described below:
 
 1. **Pomodoro Timer App**: This app allows for concentrated work on a particular task. This allows for work for 25 minutes, then a break of 5 minutes. This continues till 4 such work slots, after which a longer break is taken for 15 minutes.
