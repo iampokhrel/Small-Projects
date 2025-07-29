@@ -1,3 +1,7 @@
+'''
+This project is not mine. I have taken the code from the youtube channel "Alina Chudnova", link of the project is : https://www.youtube.com/watch?v=izQGdZvRs7I
+'''
+
 import tkinter as tk
 from tkinter import ttk, messagebox
 from ttkbootstrap import Style

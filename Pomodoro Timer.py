@@ -1,3 +1,6 @@
+'''
+This project is not mine. I have taken the code from the youtube channel "Alina Chudnova", link of the project is : https://youtu.be/uUWG5cm2Los?si=Df0bHbolhXCZVNzR
+'''
 
 #The Pomodoro Timer is a popular method of time-keeping during work, and provide a break from work at regular intervals, which can be argued to make a person more productive and efficient. Here after every 25 minutes of work, there is a short break of 5 minutes, and after every 4 such work times, there is a longer break of 15 minutes. 
 
