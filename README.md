@@ -6,3 +6,4 @@ This repository contains various small projects, created using basic Python logi
 2. **To-Do list**
   i. _Simple one_: This allows for simple note for a to-do list. It has options for adding a task, marking a task complete, and delete task, with an option to view the number of total and completed tasks.
 3. **Rent Calculator**: This program runs in the terminal and is a very basic app allowing a person to calculate rent per person based on house rent, food consumed, and electricity used.
+4. **Weather Alert**: This GUI program takes a place name as input and creates a windows notification about the weather (description, temperature, atmospheric pressure, humidity).
