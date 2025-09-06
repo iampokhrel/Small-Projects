@@ -17,7 +17,9 @@ import json
 baseURL =  "http://api.openweathermap.org/data/2.5/weather?"
 # iconURL = "http://openweathermap.org/img/wn/"
 
+
 class weatherAlert(tk.Tk):
+
     def __init__(self):
         super().__init__()
 
@@ -35,8 +37,11 @@ class weatherAlert(tk.Tk):
 
         btn = tk.Button(self, text="Get Alert", font=7, fg='grey19', command=self.getNotification).place(relx=0.4, rely=0.75)
 
-    
+
     def getNotification(self):
+        """
+        This method creates the weather message to notify.
+        """
         cityName = self.place.get()
 
         try:
@@ -61,14 +66,27 @@ class weatherAlert(tk.Tk):
         except Exception:
             mb.showerror('Error', f"Place \"{cityName}\" is not found")
 
+
     def requestData(self, city):
+        """
+        This method requests data from OpenWeatherMap for 'city' and returns the data as json. 
+        Parameter: 'city': Place name to access weather data, 
+        Return Value: json weather data 
+        """
         url = baseURL + "appid=" + 'd850f7f52bf19300a9eb4b0aa6b80f0d' + "&q=" + city
         response = requests.get(url)
         return response.json()
     
+
     def give_notification(self, place, info):
+        """
+        Gives the actual notification with a title
+        Parameters: 'place': Place name to be used in notification title, 'info': Actual notification message.
+        """
         notif.notify(title=f"WEATHER REPORT for {place.upper()}", message=info, timeout=2)
         time.sleep(7)
+
+
 
 if __name__ == '__main__':
     app = weatherAlert()
